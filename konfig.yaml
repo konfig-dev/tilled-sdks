@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://unpkg.com/konfig-lib@latest/konfig-yaml.schema.json
+
+outputDirectory: /tmp/tilled-sdks-out
+specInputPath: spec3.json
+specPath: openapi.json
+generators:
+  typescript:
+    version: 1.0.0
+    npmName: tilled-typescript-sdk
+    outputDirectory: typescript
+    clientName: Tilled
+    git:
+      userId: konfig-dev
+      repoId: tilled-sdks/tree/main/typescript

@@ -1,0 +1,45 @@
+{
+  "name": "tilled-typescript-sdk",
+  "version": "1.0.0",
+  "description": "Client for Tilled API",
+  "author": "Konfig",
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konfig-dev/tilled-sdks/tree/main/typescript"
+  },
+  "keywords": [
+    "axios",
+    "typescript",
+    "konfig",
+    "tilled-typescript-sdk"
+  ],
+  "license": "Unlicense",
+  "files": [
+    "./dist/**/*"
+  ],
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist/",
+    "prepack": "npm run build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "buffer": "^6.0.3",
+    "file-type": "16.5.4",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^12.11.5",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.0"
+  }
+}
